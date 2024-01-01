@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write new chat</title>
+</head>
+<style>
+  body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .form {
+            background-color: rgb(81, 161, 124);
+            text-align: center;
+            padding: 20px;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+             /* Added border */
+            padding: 20px; /* Added padding */
+            border-radius: 10px; /* Added border-radius for rounded corners */
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin: 1px 0;
+            width: 30%;
+            height: 50px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: white;
+            color: rgb(81, 161, 124);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 25%;
+        }
+
+        button:hover {
+            background-color: rgb(61, 141, 104);
+        }
+    </style>
+<body>
+    <div class="form">
+    <h3>Write new chat</h3>
+    <form action="/chats" method="POST">
+        <input type="text" placeholder="Who are you" name="from"><br><br>
+        <textarea name="msg"  placeholder=" write your message here.."></textarea>  <br><br>
+        <input type="text" placeholder="add receiver" name="to"><br><br>
+        <button>Create Chat</button><br><br>
+    </form>
+    </div>
+</body>
+</html>
