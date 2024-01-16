@@ -44,5 +44,5 @@ Communicate privately with friends or colleagues.
 # Technologies Used:
 <li>Frontend: HTML, CSS, JavaScript </li>
 <li>Backend: Node.js, Express</li>
-<li>Database: MongoDB</li>
+<li>Database: MongoDB </li>
 <li>Real-time Communication: WebSocket</li>
